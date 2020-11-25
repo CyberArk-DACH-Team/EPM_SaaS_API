@@ -1,4 +1,4 @@
-﻿#
+#
 # Manual Request - Create JIT policy
 # Fixed Time : 8 hours
 #
