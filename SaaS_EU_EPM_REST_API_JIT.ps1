@@ -1,17 +1,19 @@
-﻿#
+#
 # SIMPLE Script - Create JIT policy
-# v2.0 | Created by Fabian Hotarek
+# Created by Fabian Hotarek
 #
 
 #
-# Get Parameters
+# Set static Parameters
 #
 $varTargetUsername = "cybr\john"
 $varTargetComputer = "EPMWKS01"
 [Int]$varElevationTime = 4
 
+#
+# Get arguments (optional)
+#
 <#
-# Read arguments
 if (!$args[0] -or !$args[1] -or !$args[2]){
     Write-Host "Please run the script with 3 parameters, example:"
     Write-Host $MyInvocation.MyCommand.Name "cybr\john MyWorkstation01 4"
@@ -24,11 +26,11 @@ if (!$args[0] -or !$args[1] -or !$args[2]){
 
 #
 # Important Variables
+# EPMURL: Defines the dispatcher URL of the EPM datacenter
+# EPMURLInstance: Defines the EPM instance
 #
-#$EPMURL="https://eu.epm.cyberark.com"
-#$EPMURLInstance = "https://eu124.epm.cyberark.com"
-$EPMURL="https://login.epm.cyberark.com"
-$EPMURLInstance = "https://na109.epm.cyberark.com"
+$EPMURL="https://eu.epm.cyberark.com"			# change me
+$EPMURLInstance = "https://eu111.epm.cyberark.com"	# change me
 
 ####                  ####
 # Hard Coded Credentials #
@@ -165,7 +167,7 @@ try {
         } | ConvertTo-JSON
 
         # Create JIT Policy
-        #$CreateJITResult = Invoke-RestMethod -Method Post -Uri "$EPMURLInstance/EPM/API/$EPMVER/Sets/$SETID/Policies"  -Body $params -ContentType "application/json" -Headers $EPMHeader
+        $CreateJITResult = Invoke-RestMethod -Method Post -Uri "$EPMURLInstance/EPM/API/$EPMVER/Sets/$SETID/Policies"  -Body $params -ContentType "application/json" -Headers $EPMHeader
 
 } catch {
 	ParseErrorForResponseBody($_)
