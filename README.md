@@ -9,3 +9,9 @@ Please note These scripts were made available as examples to show administrators
 # Pre-Requisites
 - EPM SaaS Tenant Access
 - Username and Password to authenticate to EPM SaaS with appropriate permissions for the actions
+
+# Script
+- A
+- B
+- C
+- D
