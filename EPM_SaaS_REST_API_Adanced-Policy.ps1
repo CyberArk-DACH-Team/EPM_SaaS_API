@@ -1,11 +1,11 @@
-﻿#####Important Variables
+#####Important Variables
 $EPMURL="https://eu.epm.cyberark.com"
-$EPMURLInstance = "https://eu124.epm.cyberark.com"
+$EPMURLInstance = "https://eu111.epm.cyberark.com"
 
 ####                  ####
 # Variables for Policies #
 ####                  ####
-$targetComputerName = "Fabians-MacBook-Pro"
+$targetComputerName = "Workstation01"
 $targetUserName = "CYBR\john"
 
 ####                  ####
