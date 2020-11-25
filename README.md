@@ -24,5 +24,6 @@ EPM_SaaS_REST-API_Create-JIT-Policy-From-Manual-Request_FixedTime.ps1
 - Validation check if Active Policy exists for single Username & single Computername combination
 - Delete mulitple requests and just create one JIT policy for single Username & single Computername combination
 
-C
-D
+SaaS_EU_EPM_REST_API_JIT_v2.1.ps1
+- Simple Script to create JIT Policy
+- Validation Check if mulitple device entries with the same name exist and just uses the Active Device
