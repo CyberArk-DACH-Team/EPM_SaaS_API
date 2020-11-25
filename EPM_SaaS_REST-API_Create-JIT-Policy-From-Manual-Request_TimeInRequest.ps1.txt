@@ -1,4 +1,4 @@
-﻿#
+#
 # Manual Request - Create JIT policy
 # Time in Request. Request must end with "...time=<<valid number>>"
 # e.g. "JIT Request time=6"
