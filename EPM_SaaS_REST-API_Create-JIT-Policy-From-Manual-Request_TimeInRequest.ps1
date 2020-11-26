@@ -17,9 +17,9 @@ write-host -nonewline -f blue "# ";write-host -nonewline "  Sample by CyberArk -
 write-host -nonewline -f blue "# ";write-host -nonewline "  v1.0 (modified by Fabian Hotarek)                                                   ";write-host -f blue "#"
 write-host "#########################################################################################"-ForegroundColor blue
 
-#####Important Variables
+#####Important Variables (example US Datacenter)
 $EPMURL="https://login.epm.cyberark.com"
-$EPMURLInstance = "https://na109.epm.cyberark.com"
+$EPMURLInstance = "https://na111.epm.cyberark.com"
 
 ####                  ####
 # Hard Coded Credentials #
