@@ -1,4 +1,4 @@
-#####Important Variables
+#####Important Variables (example EU datacenter)
 $EPMURL="https://eu.epm.cyberark.com"
 $EPMURLInstance = "https://eu111.epm.cyberark.com"
 
