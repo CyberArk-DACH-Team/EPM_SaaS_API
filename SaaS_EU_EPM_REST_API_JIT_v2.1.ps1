@@ -7,7 +7,7 @@
 # Get Parameters
 #
 $varTargetUsername = "cybr\john"
-$varTargetComputer = "EPMWKS01"
+$varTargetComputer = "Workstation01"
 [Int]$varElevationTime = 4
 
 <#
@@ -23,12 +23,12 @@ if (!$args[0] -or !$args[1] -or !$args[2]){
 #>
 
 #
-# Important Variables
+# Important Variables (example EU & US datacenter)
 #
 #$EPMURL="https://eu.epm.cyberark.com"
-#$EPMURLInstance = "https://eu124.epm.cyberark.com"
+#$EPMURLInstance = "https://eu111.epm.cyberark.com"
 $EPMURL="https://login.epm.cyberark.com"
-$EPMURLInstance = "https://na109.epm.cyberark.com"
+$EPMURLInstance = "https://na111.epm.cyberark.com"
 
 ####                  ####
 # Hard Coded Credentials #
